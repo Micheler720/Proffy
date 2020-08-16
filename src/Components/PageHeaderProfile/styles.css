@@ -1,0 +1,90 @@
+.page-header-profile{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-primary);
+    width: 100%;
+    background-image: url('../../assets/images/success-background.svg');
+    background-size: contain;
+}
+.page-header-profile .top-bar-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    height: 5rem !important;
+    background: var(--color-primary-darker);
+}
+.page-header-profile .top-bar-container > img{
+    height: 1.6rem;
+}
+.page-header-profile .top-bar-container span{
+    color: var(--color-title-in-primary);
+    font-family: Archivo;
+    font-size: 1.6rem;
+}
+
+.page-header-profile .top-bar-container > a{
+    transition: opacity 0.2s;
+}
+.page-header-profile .top-bar-container > a{
+    opacity: 0.6;
+}
+.page-header-profile .top-bar-container strong{
+    color: var(--color-text-in-primary);
+
+}
+.page-header-profile .header-content{
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    margin: 3.2rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 32.4rem;
+}
+.page-header-profile .header-content img{
+    height: 18rem;
+    width: 18rem;
+    border-radius: 50%;
+}
+.page-header-profile .header-content strong{
+    font: 400 3rem Archivo;
+    line-height: 4.2rem;
+    text-align: center;
+    color: var(--color-title-in-primary);
+
+}
+.page-header-profile .header-content p{
+    max-width: 30rem;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    color: var(--color-text-in-primary);
+    margin-top: 1rem;
+
+}
+@media (min-width: 700px){
+    .page-header-profile{
+        height: 46rem;
+    }
+    .page-header-profile .top-bar-container{
+        max-width: 100%;
+    }
+    .page-header-profile .header-content{
+        flex: 1;
+        margin: 1.9rem auto;
+        padding-bottom: 48px;
+        display: flex;
+        flex-direction: column;
+        max-width: 740px;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .page-header-profile .header-content strong{
+        max-width: 350px;
+        margin-top: 1.6rem;
+    }
+}

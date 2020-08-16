@@ -1,0 +1,24 @@
+.button-salvar button {
+    height: 5.6rem;
+    width: 100%;
+    margin-top: 3.2rem;
+    background: var(--color-secundary);
+    border-radius: 0.8rem;
+    border: 0;
+    cursor: pointer;
+
+    font-size: 1.6rem;
+    font-family: 700 1.6rem Archivo;
+    color: var(--color-button-text);
+
+    transition: 0.2s;
+}
+.button-salvar button :hover{
+    background: var(--color-secundary-dark);
+}
+@media (min-width: 700px){
+    .button-salvar button {
+        width: 20rem !important;
+        margin-top:0;
+    }
+}

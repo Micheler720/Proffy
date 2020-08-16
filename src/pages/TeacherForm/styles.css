@@ -1,0 +1,29 @@
+#page-teacher-form{
+    width: 100vw;
+}
+#page-teacher-form .page-header .header-content{
+    margin-bottom: 6.4rem;
+}
+
+@media(min-width: 700px){
+    #page-teacher-form{
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #page-teacher-form main{
+        max-width: 74rem;
+        width: 100%;
+    }
+    #page-teacher-form .schedule-item{
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        column-gap: 1.6rem;
+    }
+    .input-block{
+        margin-top: 03.4rem !important; 
+    }
+    
+}
