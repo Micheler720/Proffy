@@ -13,7 +13,7 @@ interface PropsLegend {
 } 
 
 export const Legend: React.FC<PropsLegend> = (({children, title}) => {
-    return(
+    return(        
         <legend>
             {title}
             {children}

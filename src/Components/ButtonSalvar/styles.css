@@ -1,4 +1,4 @@
-.button-salvar button {
+.button-salvar{
     height: 5.6rem;
     width: 100%;
     margin-top: 3.2rem;
@@ -13,11 +13,11 @@
 
     transition: 0.2s;
 }
-.button-salvar button :hover{
+.button-salvar:hover{
     background: var(--color-secundary-dark);
 }
 @media (min-width: 700px){
-    .button-salvar button {
+    .button-salvar {
         width: 20rem !important;
         margin-top:0;
     }

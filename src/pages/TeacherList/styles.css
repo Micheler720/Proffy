@@ -14,7 +14,7 @@
     margin: 3.2rem auto;
     width: 90%;
 }
-#seacher-teachers .select-block,  #seacher-teachers .input-block, button{
+#seacher-teachers .select-block,  #seacher-teachers .input-block{
     padding: 0rem 2rem;
     width: calc(100% - 4rem);
 }

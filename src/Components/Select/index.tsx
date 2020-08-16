@@ -1,5 +1,9 @@
 import React, { SelectHTMLAttributes } from 'react';
 import './styles.css';
+interface Subjects {
+    id: string;
+    description: string;
+}
 interface selectProps extends SelectHTMLAttributes<HTMLSelectElement>{
     name: string;
     id: string;
@@ -9,13 +13,18 @@ interface selectProps extends SelectHTMLAttributes<HTMLSelectElement>{
         label: string;
     }>
 }
+interface SelectSubjectProps extends SelectHTMLAttributes<HTMLSelectElement>{
+    name: string;
+    id: string;
+    label: string;
+}
 
 const Select: React.FC<selectProps> = ({label, id, name, options, ...rest}) => {
     return(
         <div className="select-block">
             <label htmlFor={id}>{label}</label>
             <select value="" id={id}  name={name} {...rest}>
-                <option value="" disabled  hidden > Selecione uma opção</option>
+                <option value="0" disabled  hidden  > Selecione uma opção</option>
                 {options.map(item=>{
                     return(
                         <option key={item.value} value={item.value}>{item.label}</option>
@@ -26,4 +35,5 @@ const Select: React.FC<selectProps> = ({label, id, name, options, ...rest}) => {
     );
 
 }
+
 export default Select;
