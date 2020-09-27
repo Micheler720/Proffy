@@ -24,16 +24,6 @@ Também, é preciso ter um gerenciador de pacotes seja o NPM ou Yarn.
 Por fim, é essencial ter o Expo instalado de forma global na máquina
 Executando a Aplicação:
   
-
-    # API
-      $ cd server
-      # Instalando as dependências do projeto.
-      $ yarn # ou npm install
-      # Configurando o banco de dados e criando as tabelas.
-      $ yarn knex:migrate # ou npm run knex:migrate
-    
-      # Inicie a API
-      $ yarn start # ou npm start
     
       # Aplicação web
       $ cd web
@@ -42,12 +32,6 @@ Executando a Aplicação:
       # Inicie a aplicação web
       $ yarn start # ou npm start
     
-      # Aplicação mobile
-      $ cd mobile
-      # Instalando as dependências do projeto.
-      $ yarn # ou npm install
-      # Inicie a aplicação mobile
-      $ yarn start # ou npm start
 
 📝 Licença
 Esse projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
